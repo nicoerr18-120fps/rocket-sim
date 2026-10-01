@@ -2,14 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 g = 9.81
-rho = 1.225
 Cd = 0.5
 A = 0.008            # sezione frontale (m^2)
 
 m_secca = 2.0        # massa senza propellente (kg)
 m_prop = 0.5         # massa propellente (kg)
-spinta = 120.0       # spinta del motore (N)
-t_burn = 2.0         # durata della combustione (s)
+spinta = 60.0      # spinta del motore (N)
+t_burn = 4         # durata della combustione (s)
 dm_dt = m_prop / t_burn   # portata di propellente (kg/s)
 
 dt = 0.001
@@ -22,7 +21,7 @@ while True:
         m = m - dm_dt * dt
     else:
         F_spinta = 0.0
-
+    rho = 1.225 * np.exp(-y[-1] / 8500)
     drag = 0.5 * rho * Cd * A * v**2
     F_tot = F_spinta - m * g - np.sign(v) * drag
     a = F_tot / m
