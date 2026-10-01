@@ -38,3 +38,11 @@ vari effetti (gravità, resistenza dell'aria, spinta) cambiano la traiettoria.
 - Il parametro che conta è il coefficiente balistico m/(Cd·A).
 
 ## Come eseguirlo
+pip3 install numpy matplotlib
+python3 razzo.py
+python3 razzo_drag.py
+
+## Prossimi passi
+- [ ] Spinta del motore e perdita di massa
+- [ ] Densità dell'aria variabile con la quota
+- [ ] Traiettoria 2D con angolo di lancio
