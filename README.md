@@ -25,8 +25,8 @@ vari effetti (gravità, resistenza dell'aria, spinta) cambiano la traiettoria.
 
 | | Senza aria | Con aria |
 |---|---|---|
-| Quota massima | [X] m | [0.00084] m |
-| Tempo di volo | [X] s | [11.51] s |
+| Quota massima | [0.00008+2.037736e3] m | [0.00084+2.037736e3] m |
+| Tempo di volo | [20.380] s | [11.51] s |
 
 ## Cosa ho osservato
 - Aumentando la massa, la traiettoria si avvicina a quella senza aria
