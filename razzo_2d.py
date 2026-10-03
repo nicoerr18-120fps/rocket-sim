@@ -11,7 +11,7 @@ spinta = 120.0
 t_burn = 2.0
 dm_dt = m_prop / t_burn
 
-angolo = 45.0                 # angolo di lancio rispetto al suolo (gradi)
+angolo = 43.0                 # angolo di lancio rispetto al suolo (gradi)
 theta = np.radians(angolo)
 dt = 0.001
 
