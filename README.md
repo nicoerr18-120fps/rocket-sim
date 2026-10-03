@@ -43,6 +43,15 @@ python3 razzo.py
 python3 razzo_drag.py
 
 ## Prossimi passi
-- [ ] Spinta del motore e perdita di massa
+- [X] Spinta del motore e perdita di massa
 - [ ] Densità dell'aria variabile con la quota
 - [ ] Traiettoria 2D con angolo di lancio
+### 3. Razzo con motore (`razzo_motore.py`)
+- Parte da fermo, spinta 120 N per 2 s, perdita di massa del propellente.
+- Quota massima: 331.8 m, velocità massima: 82.4 m/s.
+### 3. Razzo con motore (`razzo_motore.py`)
+- Spinta 120 N per 2 s: quota 331.8 m, velocità max 82.4 m/s.
+- Spinta 240 N per 2 s: quota 803.4 m, velocità max 171.2 m/s.
+- Stesso impulso con spinta 60 N per 4 s: quota 283.4 m, velocità max 62.1 m/s.
+- Conclusione: a parità di propellente, bruciare più a lungo aumenta la
+  perdita per gravità (circa g · t_burn) e riduce la velocità finale.
