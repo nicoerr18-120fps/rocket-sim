@@ -44,8 +44,8 @@ python3 razzo_drag.py
 
 ## Prossimi passi
 - [X] Spinta del motore e perdita di massa
-- [ ] Densità dell'aria variabile con la quota
-- [ ] Traiettoria 2D con angolo di lancio
+- [X] Densità dell'aria variabile con la quota
+- [X] Traiettoria 2D con angolo di lancio
 ### 3. Razzo con motore (`razzo_motore.py`)
 - Parte da fermo, spinta 120 N per 2 s, perdita di massa del propellente.
 - Quota massima: 331.8 m, velocità massima: 82.4 m/s.
