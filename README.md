@@ -74,4 +74,3 @@ python3 razzo_drag.py
 - Senza aria (45°) la gittata sarebbe 1007.5 m: il drag ne elimina il 42%.
 
 ![Traiettoria 2D](traiettoria_2d.png)
-grep "png" README.md
