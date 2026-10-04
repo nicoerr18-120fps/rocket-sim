@@ -11,7 +11,7 @@ spinta = 120.0
 t_burn = 2.0
 dm_dt = m_prop / t_burn
 
-angolo = 43.0                 # angolo di lancio rispetto al suolo (gradi)
+angolo = 45.0                 # angolo di lancio rispetto al suolo (gradi)
 theta = np.radians(angolo)
 dt = 0.001
 
@@ -54,8 +54,10 @@ plt.ylabel("Quota (m)")
 plt.title(f"Traiettoria 2D, angolo {angolo}°")
 plt.axis("equal")
 plt.grid()
+plt.savefig("traiettoria_2d.png", dpi=150)
 plt.show()
 
 print(f"Quota massima: {max(ys):.1f} m")
 print(f"Gittata: {xs[-1]:.1f} m")
 print(f"Tempo di volo: {t:.1f} s")
+

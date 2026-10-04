@@ -49,9 +49,29 @@ python3 razzo_drag.py
 ### 3. Razzo con motore (`razzo_motore.py`)
 - Parte da fermo, spinta 120 N per 2 s, perdita di massa del propellente.
 - Quota massima: 331.8 m, velocità massima: 82.4 m/s.
-### 3. Razzo con motore (`razzo_motore.py`)
+### Razzo con motore (`razzo_motore.py`)
 - Spinta 120 N per 2 s: quota 331.8 m, velocità max 82.4 m/s.
 - Spinta 240 N per 2 s: quota 803.4 m, velocità max 171.2 m/s.
 - Stesso impulso con spinta 60 N per 4 s: quota 283.4 m, velocità max 62.1 m/s.
 - Conclusione: a parità di propellente, bruciare più a lungo aumenta la
   perdita per gravità (circa g · t_burn) e riduce la velocità finale.
+### 4. Traiettoria 2D (`razzo_2d.py`)
+- Spinta orientata secondo l'angolo di lancio, drag vettoriale opposto
+  alla velocità, densità atmosferica variabile con la quota.
+- Test di coerenza: a 90° riproduce il caso verticale (333.2 m contro
+  331.8 m; la differenza è dovuta alla densità variabile).
+
+| Angolo | Quota max | Gittata | Tempo di volo |
+|---|---|---|---|
+| 30° | 73.2 m | 531.0 m | 8.9 s |
+| 40° | 129.5 m | 584.2 m | 11.4 s |
+| 45° | 159.2 m | 586.0 m | 12.5 s |
+| 50° | 188.8 m | 572.8 m | 13.5 s |
+| 60° | 244.6 m | 503.5 m | 15.2 s |
+
+- La gittata massima si trova a circa 43°, poco sotto i 45° ideali, a
+  causa della resistenza dell'aria.
+- Senza aria (45°) la gittata sarebbe 1007.5 m: il drag ne elimina il 42%.
+
+![Traiettoria 2D](traiettoria_2d.png)
+grep "png" README.md
